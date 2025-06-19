@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow only specific top-level folders
+!rofi/
+!hypr/
+!waybar/
+!kitty/
+
+# Allow everything under them
+!rofi/**
+!hypr/**
+!waybar/**
+!kitty/**
+
+# Allow .gitignore and README.md
+!.gitignore
+!README.md
+

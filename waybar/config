@@ -1,0 +1,111 @@
+{
+    "position": "top",
+    "reload_style_on_change": true,
+    "height": 30,
+    "modules-left": ["hyprland/workspaces","clock"],
+    "modules-center": ["group/info"],
+    "modules-right": ["network","pulseaudio","tray","cpu","temperature", "custom/power"],
+
+"hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+        "active": "",
+        "default": "",
+        "empty": ""
+    },
+    "persistent-workspaces": {
+        "*": [ 1,2,3,4,5 ]
+    },
+    "visible-on": "visible"
+     },
+	"custom/power": {
+		"format": "",
+		"on-click": "$HOME/.config/rofi/powermenu/type-5/powermenu.sh"
+	},
+	 "clock": {
+        "format": "{:%d.%m.%Y | %H:%M}"
+    },
+	"network": {
+        	"format-wifi": "  {essid}",
+        	"format-ethernet": "{ifname} ",
+        	"format-linked": "{ifname} (No IP) ",
+        	"format-disconnected": "Disconnected",
+        	"format-alt": "{ifname}: {ipaddr}/{cidr}",
+            "tooltip-format-wifi": "Signal Strength: {signalStrength}%"
+	},
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+        	"format-muted": "󰖁 Muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "temperature": {
+  "hwmon-path": "/tmp/cpu_temp",
+  "critical-threshold": 80,
+  "format": "{temperatureC}°C ",
+  "tooltip": true
+},
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true,
+        "tooltip-format": "Core {core}: {core_usage}%",
+        "max-length": 10,
+        "interval": 1
+    },
+      "group/info": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/vscode",
+      "group/gcpu"
+    ]
+  },
+  "custom/dmark": {
+    "format": "",
+    "tooltip": false
+  },
+  "group/gcpu": {
+    "orientation": "inherit",
+    "modules": [
+      "custom/firefox",
+      "custom/pcsx2",
+      "custom/foliate"
+    ]
+  },
+"custom/vscode": {
+    "format": "",  
+    "tooltip": "Launch VS Code",
+    "on-click": "code"
+},
+"custom/firefox": {
+    "format": "",  
+    "tooltip": "Launch Firefox",
+    "on-click": "firefox"
+},
+"custom/pcsx2": {
+    "format": "",  
+    "tooltip": "Launch PCSX2",
+    "on-click": "pcsx2"
+},
+"custom/foliate": {
+    "format": "",
+    "tooltip": "Launch Foliate",
+    "on-click": "foliate"
+}
+
+}

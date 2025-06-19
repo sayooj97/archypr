@@ -1,0 +1,129 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: 'Arcane Nine', sans-serif;
+  font-size: 11pt;
+  min-height: 0;
+  background-color: #000000;
+  /* color: #4AB1DD; */ /* Electric Blue (optional default text color) */
+}
+
+tooltip {
+  border-radius: 5px;
+  border: 1px solid #9D3C49; /* Rose Red */
+}
+
+#workspaces button {
+  all: unset;
+  padding: 5px 8px;
+  color: #D46A7A; /* Vibrant Rose Pink */
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  color: #FFDD55; /* Vibrant Gold */
+}
+
+#workspaces button.active {
+  color: #6F6FFF; /* Bright Periwinkle Indigo */
+}
+
+#workspaces button.empty {
+  color: #591527; /* Deep Maroon (Dark but visible for empty) */
+}
+
+#workspaces button.empty:hover {
+  color: #F2C777; /* Soft Gold (Hover on empty) */
+}
+
+#workspaces button.empty.active {
+  color: #F2BBA7; /* Pastel Peach (Empty but active) */
+}
+
+#custom-date,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#temperature,
+#cpu,
+#gcpu,
+#custom-vscode,
+#custom-firefox,
+#custom-pcsx2,
+#custom-foliate {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+#custom-power:hover {
+  color: #BF3F4F; /* Vibrant Red - outfit highlight */
+}
+
+#battery.charging:hover {
+  color: #5F9D76; /* Soft Green - chalkboard tone */
+}
+
+#battery.warning:not(.charging):hover,
+#battery.critical:not(.charging):hover {
+  color: #BF3F4F; /* Red - aggressive state */
+}
+
+#custom-date:hover {
+  color: #FFD275; /* Gold - accessory tone */
+}
+
+#clock:hover {
+  color: #A569BD; /* Magenta - makeup shadows */
+}
+
+#battery:hover {
+  color: #58C1B5; /* Cyan - rim light on hair */
+}
+
+#pulseaudio:hover {
+  color: #6D8FC9; /* Blue - hair highlights */
+}
+
+#network:hover {
+  color: #5F9D76; /* Soft green - secondary element */
+}
+
+#temperature.warning:hover {
+  color: #BF3F4F; /* Red - warning tone */
+}
+
+#temperature:hover {
+  color: #FFD275; /* Warm brass - sunlight warmth */
+}
+
+#cpu:hover {
+  color: #A569BD; /* Pastel magenta - bold accent */
+}
+
+#cpu.tooltip {
+  color: #58C1B5;
+  background: #2B2F36; /* Deep Graphite background for contrast */
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 10pt;
+}
+
+#power-profiles-daemon.power-saver:hover {
+  color: #5F9D76; /* Soft green */
+}
+#power-profiles-daemon.performance:hover {
+  color: #BF3F4F; /* Bold red - energetic */
+}
+#power-profiles-daemon.balanced:hover {
+  color: #6D8FC9; /* Blue - stability */
+}
+
+#custom-vscode:hover,
+#custom-firefox:hover,
+#custom-pcsx2:hover,
+#custom-foliate:hover,
+#custom-date:hover {
+  color: #A569BD; /* Pastel magenta - unified hover for custom apps */
+}
