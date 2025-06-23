@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["hyprland/workspaces","clock"],
     "modules-center": ["group/info"],
-    "modules-right": ["network","pulseaudio","tray","cpu","temperature", "custom/power"],
+    "modules-right": ["idle_inhibitor","network","pulseaudio","tray","cpu","temperature", "custom/power"],
 
 "hyprland/workspaces": {
     "disable-scroll": true,
@@ -106,6 +106,13 @@
     "format": "",
     "tooltip": "Launch Foliate",
     "on-click": "foliate"
+},
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    }
 }
 
 }
