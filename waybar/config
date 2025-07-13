@@ -4,7 +4,7 @@
     "height": 30,
     "modules-left": ["hyprland/workspaces","clock"],
     "modules-center": ["group/info"],
-    "modules-right": ["idle_inhibitor","network","pulseaudio","tray","cpu","temperature", "custom/power"],
+    "modules-right": ["keyboard-state","idle_inhibitor","network","pulseaudio","tray","cpu","temperature", "custom/power"],
 
 "hyprland/workspaces": {
     "disable-scroll": true,
@@ -49,7 +49,7 @@
         }
     },
     "tray": {
-        "spacing": 10
+        "spacing": 5
     },
     "temperature": {
   "hwmon-path": "/tmp/cpu_temp",
@@ -75,10 +75,6 @@
       "group/gcpu"
     ]
   },
-  "custom/dmark": {
-    "format": "",
-    "tooltip": false
-  },
   "group/gcpu": {
     "orientation": "inherit",
     "modules": [
@@ -89,22 +85,18 @@
   },
 "custom/vscode": {
     "format": "",  
-    "tooltip": "Launch VS Code",
     "on-click": "code"
 },
 "custom/firefox": {
     "format": "",  
-    "tooltip": "Launch Firefox",
     "on-click": "firefox"
 },
 "custom/pcsx2": {
     "format": "",  
-    "tooltip": "Launch PCSX2",
     "on-click": "pcsx2"
 },
 "custom/foliate": {
     "format": "",
-    "tooltip": "Launch Foliate",
     "on-click": "foliate"
 },
 "idle_inhibitor": {
@@ -112,6 +104,15 @@
     "format-icons": {
         "activated": "",
         "deactivated": ""
+    }
+},
+"keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": " {name} ",
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
     }
 }
 

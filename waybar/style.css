@@ -10,7 +10,7 @@
 
 tooltip {
   border-radius: 5px;
-  border: 1px solid #9D3C49; /* Rose Red */
+  /* border: 1px solid #9D3C49; */
 }
 
 #workspaces button {
@@ -52,10 +52,11 @@ tooltip {
 #custom-firefox,
 #custom-pcsx2,
 #custom-foliate,
-#custom-power {
-  padding: 5px 7px;
+#custom-power,
+#idle_inhibitor,
+#keyboard-state {
+  padding: 5px;
   margin: 0px 5px;
-  border-radius: 2px;
 }
 
 #custom-power:hover {
@@ -145,12 +146,6 @@ tooltip {
   padding: 5px;
   margin: 0px 5px;
 }
-#tray > .passive {
-  color: #D46A7A; /* Vibrant Rose Pink */
-}
-#tray > .active {
-  color: #6F6FFF; /* Bright Periwinkle Indigo */
-}
-#tray > .needs-attention {
-  color: #BF3F4F; /* Vibrant Red */
+#keyboard-state label.locked {
+  color: #BF3F4F; /* Bold Red - locked state */
 }
