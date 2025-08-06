@@ -6,12 +6,14 @@
 !hypr/
 !waybar/
 !kitty/
+!bongocat/
 
 # Allow everything under them
 !rofi/**
 !hypr/**
 !waybar/**
 !kitty/**
+!bongocat/**
 
 # Allow .gitignore and README.md
 !.gitignore
